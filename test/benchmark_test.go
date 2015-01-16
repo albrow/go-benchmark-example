@@ -12,6 +12,6 @@ func BenchmarkNaive(b *testing.B) {
 
 func benchmarkPascaler(b *testing.B, p common.Pascaler) {
 	for i := 0; i < b.N; i++ {
-		p.Pascal(100, 100)
+		p.Pascal(20000, 10000)
 	}
 }
