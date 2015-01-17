@@ -10,8 +10,12 @@ func BenchmarkNaive(b *testing.B) {
 	benchmarkPascaler(b, implementations.Naive)
 }
 
+func BenchmarkRecursive(b *testing.B) {
+	benchmarkPascaler(b, implementations.Recursive)
+}
+
 func benchmarkPascaler(b *testing.B, p common.Pascaler) {
 	for i := 0; i < b.N; i++ {
-		p.Pascal(20000, 10000)
+		p.Pascal(30, 15)
 	}
 }

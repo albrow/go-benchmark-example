@@ -10,6 +10,10 @@ func TestNaive(t *testing.T) {
 	testPascaler(t, implementations.Naive)
 }
 
+func TestRecursive(t *testing.T) {
+	testPascaler(t, implementations.Recursive)
+}
+
 func testPascaler(t *testing.T, p common.Pascaler) {
 	// cases is an array of test cases, each consisting of two inputs
 	// n and m and the expected output.
