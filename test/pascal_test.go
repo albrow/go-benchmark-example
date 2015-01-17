@@ -14,6 +14,10 @@ func TestRecursive(t *testing.T) {
 	testPascaler(t, implementations.Recursive)
 }
 
+func TestBuiltin(t *testing.T) {
+	testPascaler(t, implementations.Builtin)
+}
+
 func testPascaler(t *testing.T, p common.Pascaler) {
 	// cases is an array of test cases, each consisting of two inputs
 	// n and m and the expected output.
