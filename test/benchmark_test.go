@@ -25,6 +25,6 @@ func BenchmarkBuiltin(b *testing.B) {
 
 func benchmarkPascaler(b *testing.B, p common.Pascaler) {
 	for i := 0; i < b.N; i++ {
-		p.Pascal(2e4, 1e3)
+		p.Pascal(64, 32)
 	}
 }
